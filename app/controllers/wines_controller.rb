@@ -18,7 +18,7 @@ class WinesController < ApplicationController
     @wine = Wine.new(wine_params)
 
     if @wine.save
-      render json: @wine, status: :created, location: @wine
+      render json: @wine, status: :created
     else
       render json: @wine.errors, status: :unprocessable_entity
     end
