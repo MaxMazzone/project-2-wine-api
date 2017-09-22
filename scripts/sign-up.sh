@@ -13,5 +13,5 @@ curl "${API}${URL_PATH}" \
       "password_confirmation": "'"${PASSWORD}"'"
     }
   }'
-
+# EMAIL=cat PASSWORD=cat PASSWORD=cat sh scripts/sign-up.sh
 echo
