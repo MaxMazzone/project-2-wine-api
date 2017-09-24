@@ -10,8 +10,11 @@ curl "${API}${URL_PATH}" \
   --data '{
     "wine": {
       "name": "'"${NAME}"'",
-      "vintage": "'"${VINTAGE}"'"
+      "vintage": "'"${VINTAGE}"'",
+      "region_name": "'"${REGION}"'",
+      "notes": "'"${NOTES}"'",
+      "price": "'"${PRICE}"'"
     }
   }'
-# TOKEN=BAhJIiVjZDhhMWQxZjNiMDdhNWZiODQxYzNiMjQ0MGU5MGY2MQY6BkVG--d2dce593e58b20df8833572446330e3d44fee7cf NAME=PABUS VINTAGE=2005 sh scripts/remote-curl/wines/create-wine.sh
+# TOKEN= NAME= VINTAGE= REGION= NOTES= PRICE= sh scripts/remote-curl/wines/create-wine.sh
 echo
