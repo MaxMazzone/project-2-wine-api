@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="${API_ORIGIN:-http://localhost:4741}"
+API="https://fierce-garden-65986.herokuapp.com"
 URL_PATH="/wines"
 curl "${API}${URL_PATH}" \
   --include \
@@ -13,5 +13,5 @@ curl "${API}${URL_PATH}" \
       "vintage": "'"${VINTAGE}"'"
     }
   }'
-# TOKEN= NAME=PABUS VINTAGE=2005 sh scripts/wines/create-wine.sh
+# TOKEN=BAhJIiVjZDhhMWQxZjNiMDdhNWZiODQxYzNiMjQ0MGU5MGY2MQY6BkVG--d2dce593e58b20df8833572446330e3d44fee7cf NAME=PABUS VINTAGE=2005 sh scripts/remote-curl/wines/create-wine.sh
 echo
