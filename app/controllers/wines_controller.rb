@@ -3,7 +3,7 @@ class WinesController < ProtectedController
 
   # GET /wines
   def index
-    @wines = current_user.wines.all
+    @wines = current_user.wines.all.order('name ASC')
 
     render json: @wines
   end
